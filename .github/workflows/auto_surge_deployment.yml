@@ -35,7 +35,7 @@ jobs:
       run: yarn build
       
     - name: Install Surge
-      run: npm install -g surge
+      run: npm install --global surge
       
     - name: Deploy to Surge
-      run: surge ./build projectofhifz.surge.sh --taken ${{secrets.SURGE_TOKEN}}
+      run: surge ./build project_of_hifz_170956.surge.sh --taken ${{secrets.SURGE_TOKEN}}
